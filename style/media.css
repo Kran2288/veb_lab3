@@ -23,11 +23,11 @@
         margin: 0;
     }
 
-    .price-tags {
+    .main__price-tags {
         flex-direction: column;
     }
 
-    .price-tag {
+    .main__price-tag {
         width: 90%;
         margin: 2rem auto;
     }
@@ -39,16 +39,38 @@
     .footer-menu {
         display: none;
     }
+
+    .header__main-text span {
+        font-size: 20px;
+    }
+
+    .header__main-text p {
+        font-size: 20px;
+    }
+
+    .main__price-tag p {
+        font-size: 17px;
+    }
+
+    .main__price-tag h4 {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 1550px) {
-    .price-tags {
+    .main__price-tags {
         flex-direction: column;
     }
 
-    .price-tag {
+    .main__price-tag {
         width: 70%;
         margin: 2rem auto;
     }
 
+}
+
+@media (max-width: 500px) {
+    .main__price-tag {
+        height: 600px;
+    }
 }

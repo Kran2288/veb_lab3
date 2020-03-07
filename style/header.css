@@ -62,7 +62,7 @@
     text-transform: uppercase;
 }
 
-.main-text {
+.header__main-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,16 +72,16 @@
     text-align: center;
 }
 
-.main-text h1 {
+.header__main-text h1 {
     margin: 0;
     font-size: 80px;
 }
 
-.main-text span {
+.header__main-text span {
     display: inline-block;
 }
 
-.main-text span:after {
+.header__main-text span:after {
     content: '';
     width: 20px;
     height: 1px;
@@ -91,7 +91,7 @@
     margin-left: 10px;
 }
 
-.main-text span:before {
+.header__main-text span:before {
     content: '';
     width: 20px;
     height: 1px;
@@ -101,7 +101,7 @@
     margin-right: 10px;
 }
 
-.main-arrow {
+.header__main-arrow {
     position: relative;
     z-index: 2;
     height: 15vh;

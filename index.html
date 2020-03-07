@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/media.css">
@@ -26,11 +26,14 @@
         <li><a href="" class="menu-link">Pricing</a></li>
         <li><a href="" class="get-started-btn menu-link">get started</a></li>
     </ul>
+
+    <!-- Шапка -->
+
     <header>
         <div class="main">
             <div class="main-overlay"></div>
             <div class="header">
-                <div class="logo">
+                <div class="header__logo">
                     <img src="image/logo.png" alt="logo">
                 </div>
                 <a href="" class="m-menu-link">
@@ -47,80 +50,90 @@
                     </ul>
                 </div>
             </div>
-            <div class="main-text">
+            <div class="header__main-text">
                 <span>social marketing & analytics</span>
                 <h1>Pricing Table</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae mol</p>
             </div>
-            <a href="" class="main-arrow">
+            <a href="#logo-down" class="header__main-arrow">
                 <div class="arrow-down">
                     <img src="image/arrows.png" alt="">
                 </div>
             </a>
         </div>
     </header>
-    <div class="table">
-        <div class="table-header">
-            <span class="table-subtitle">MIsocial</span>
-            <h2 class="">Select a Plan</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod animi temporibus officia.</p>
-        </div>
-        <div class="price-tags">
-            <div class="price-tag">
-                <figure class="imghvr-fade" style="background-color: #fff;">
-                    <img src="image/Asset 1.png" alt="example-image" class="figure__icon">
-                    <figcaption>
-                        <h3 class="ih-fade-down ih-delay-sm ">
-                            Ashirov</h3>
-                    </figcaption>
-                </figure>
-                <span>personal</span>
-                <h4><sup>$</sup>0<sub>/month</sub></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ex consequuntur, id aspernatur
-                    explicabo tenetur totam officiis impedit molestias similique ratione deserunt, quasi ipsa illum
-                    error repellendus, voluptates optio accusamus.</p>
-                <button class="price-btn">select plan</button>
-            </div>
-            <div class="price-tag">
-                <figure class="imghvr-fade" style="background-color: #fff;">
-                    <img src="image/Asset 2.png" alt="example-image" class="figure__icon">
-                    <figcaption>
-                        <h3 class="ih-fade-down ih-delay-sm ">
-                            Ashirov </h3>
-                    </figcaption>
-                </figure>
-                <span>personal</span>
-                <h4><sup>$</sup>29<sub>/month</sub></h4>
-                <p>Velit veniam numquam, nemo in ducimus voluptatem nobis asperiores ratione, modi odit provident est?
-                    Reprehenderit ea excepturi itaque. Tempore dignissimos, nemo eaque odit at asperiores consectetur
-                    aliquid accusamus! Voluptas, repellat!</p>
-                <button class="price-btn">select plan</button>
-            </div>
-            <div class="price-tag">
-                <figure class="imghvr-fade" style="background-color: #fff;">
-                    <img src="image/Asset 3.png" alt="example-image" class="figure__icon">
-                    <figcaption>
-                        <h3 class="ih-fade-down ih-delay-sm ">
-                            Ashirov</h3>
-                    </figcaption>
-                </figure>
-                <span>personal</span>
-                <h4><sup>$</sup>49<sub>/month</sub></h4>
-                <p>Vero sint consequatur ipsum natus assumenda possimus, cumque dolor corrupti. Provident facere ratione
-                    pariatur aut possimus soluta vitae, maiores ex a numquam vel doloremque laboriosam fugiat
-                    necessitatibus animi nostrum voluptates?</p>
-                <button class="price-btn">select plan</button>
-            </div>
-        </div>
-        <canvas id="myChart" style="width:200px; margin-top: 3rem;"></canvas>
 
-    </div>
-    <script src="index.js"></script>
+    <!-- Основная часть -->
+    <main>
+        <div class="table">
+            <div class="table-header">
+                <span class="table-subtitle">MIsocial</span>
+                <h2 class="">Select a Plan</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod animi temporibus officia.</p>
+            </div>
+            <div class="main__price-tags">
+                <div class="main__price-tag">
+                    <figure class="imghvr-fade" style="background-color: #fff;">
+                        <img src="image/Asset 1.png" alt="example-image" class="figure__icon">
+                        <figcaption>
+                            <h3 class="ih-fade-down ih-delay-sm ">
+                                Ashirov</h3>
+                        </figcaption>
+                    </figure>
+                    <span>personal</span>
+                    <h4><sup>$</sup>0<sub>/month</sub></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ex consequuntur, id
+                        aspernatur
+                        explicabo tenetur totam officiis impedit molestias similique ratione deserunt, quasi ipsa illum
+                        error repellendus, voluptates optio accusamus.</p>
+                    <button class="price-btn">select plan</button>
+                </div>
+                <div class="main__price-tag">
+                    <figure class="imghvr-fade" style="background-color: #fff;">
+                        <img src="image/Asset 2.png" alt="example-image" class="figure__icon">
+                        <figcaption>
+                            <h3 class="ih-fade-down ih-delay-sm ">
+                                Ashirov </h3>
+                        </figcaption>
+                    </figure>
+                    <span>personal</span>
+                    <h4><sup>$</sup>29<sub>/month</sub></h4>
+                    <p>Velit veniam numquam, nemo in ducimus voluptatem nobis asperiores ratione, modi odit provident
+                        est?
+                        Reprehenderit ea excepturi itaque. Tempore dignissimos, nemo eaque odit at asperiores
+                        consectetur
+                        aliquid accusamus! Voluptas, repellat!</p>
+                    <button class="price-btn">select plan</button>
+                </div>
+                <div class="main__price-tag">
+                    <figure class="imghvr-fade" style="background-color: #fff;">
+                        <img src="image/Asset 3.png" alt="example-image" class="figure__icon">
+                        <figcaption>
+                            <h3 class="ih-fade-down ih-delay-sm ">
+                                Ashirov</h3>
+                        </figcaption>
+                    </figure>
+                    <span>personal</span>
+                    <h4><sup>$</sup>49<sub>/month</sub></h4>
+                    <p>Vero sint consequatur ipsum natus assumenda possimus, cumque dolor corrupti. Provident facere
+                        ratione
+                        pariatur aut possimus soluta vitae, maiores ex a numquam vel doloremque laboriosam fugiat
+                        necessitatibus animi nostrum voluptates?</p>
+                    <button class="price-btn">select plan</button>
+                </div>
+            </div>
+            <canvas id="myChart" style="width:200px; margin-top: 3rem;"></canvas>
+        </div>
+    </main>
+
+
+    <!-- Подвал -->
+
     <footer>
         <div class="footer-wrap">
             <div class="footer">
-                <div class="logo">
-                    <img src="image/logo.png" alt="">
+                <div class="footer__logo">
+                    <img src="image/logo.png" alt="" id="logo-down">
                 </div>
                 <div class="footer-menu">
                     <ul>
@@ -134,6 +147,10 @@
                 </div>
             </div>
     </footer>
+
+    <!-- Скрипты -->
+
+    <script src="script/index.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
         $(function () {
