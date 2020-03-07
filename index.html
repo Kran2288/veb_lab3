@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="style/imagehover.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Caladea|PT+Serif&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <title>Ashirov_Lab3</title>
@@ -15,6 +17,15 @@
 </head>
 
 <body>
+    <ul class="m-menu">
+        <li class="close-menu">&times;</li>
+        <li><a href="" class="menu-link">Home</a></li>
+        <li><a href="" class="menu-link">Why MISOCIAL</a></li>
+        <li><a href="" class="menu-link">Features</a></li>
+        <li><a href="" class="menu-link">Articles</a></li>
+        <li><a href="" class="menu-link">Pricing</a></li>
+        <li><a href="" class="get-started-btn menu-link">get started</a></li>
+    </ul>
     <header>
         <div class="main">
             <div class="main-overlay"></div>
@@ -22,7 +33,10 @@
                 <div class="logo">
                     <img src="image/logo.png" alt="logo">
                 </div>
-                <div class="menu">
+                <a href="" class="m-menu-link">
+                    <i class="fas fa-align-center"></i>
+                </a>
+                <div class="menu visible-lg">
                     <ul>
                         <li><a href="" class="menu-link">Home</a></li>
                         <li><a href="" class="menu-link">Why MISOCIAL</a></li>
@@ -102,6 +116,40 @@
 
     </div>
     <script src="index.js"></script>
+    <footer>
+        <div class="footer-wrap">
+            <div class="footer">
+                <div class="logo">
+                    <img src="image/logo.png" alt="">
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="" class="footer-menu-link">Home</a></li>
+                        <li><a href="" class="footer-menu-link">Why MISOCIAL</a></li>
+                        <li><a href="" class="footer-menu-link">Features</a></li>
+                        <li><a href="" class="footer-menu-link">Articles</a></li>
+                        <li><a href="" class="footer-menu-link">Pricing</a></li>
+                        <li><a href="" class="footer-get-started footer-menu-link">get started</a></li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            var link = $('.m-menu-link');
+            var close = $('.close-menu');
+            var menu = $('.m-menu');
+            link.on('click', function (event) {
+                event.preventDefault();
+                menu.toggleClass('m-menu__active');
+            });
+            close.on('click', function (event) {
+                event.preventDefault();
+                menu.toggleClass('m-menu__active');
+            });
+        });
+    </script>
 </body>
 
 </html>
