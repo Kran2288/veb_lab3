@@ -1,18 +1,24 @@
 @media (max-width: 1199px) {
     html {
-        font-size: 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1550px) {
+    .main__price-tags {
+        flex-direction: column;
     }
 
+    .main__price-tag {
+        width: 70%;
+        margin: 2rem auto;
+    }
 
 }
 
 @media (max-width: 991px) {
     html {
-        font-size: 11px;
-    }
-
-    .visible-lg {
-        display: none;
+        font-size: 0.8rem;
     }
 
     .m-menu-link {
@@ -57,20 +63,90 @@
     }
 }
 
-@media (max-width: 1550px) {
-    .main__price-tags {
-        flex-direction: column;
-    }
 
-    .main__price-tag {
-        width: 70%;
-        margin: 2rem auto;
-    }
-
-}
 
 @media (max-width: 500px) {
     .main__price-tag {
         height: 600px;
+    }
+
+    .header {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .table {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 5rem;
+
+    }
+
+    .menu ul {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30%;
+
+    }
+
+    .get-started-btn {
+        display: none;
+    }
+
+    .header__main-text h1 {
+        font-size: 50px;
+    }
+
+    .header__main-text p {
+        font-size: 15px;
+    }
+
+    .table-header p {
+        font-size: 15px;
+    }
+
+    .table-header h2 {
+        font-size: 40px;
+    }
+
+    .table-header span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 260px) {
+    .header__main-text h1 {
+        font-size: 30px;
+    }
+
+    .header__main-text p {
+        font-size: 13px;
+    }
+
+    .header__main-text span {
+        font-size: 13px;
+    }
+
+    .table-header p {
+        font-size: 15px;
+    }
+
+    .table-header h2 {
+        font-size: 40px;
+    }
+
+    .table-header span {
+        font-size: 15px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20%;
     }
 }
